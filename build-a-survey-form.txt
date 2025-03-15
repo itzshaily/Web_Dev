@@ -1,0 +1,101 @@
+** start of undefined **
+
+<html>
+<head>
+<title>Survey-Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1 id="title"><b>freeCodeCamp Survey form</b></h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form">
+
+    <label id="name-label">Name: </label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" value="John Doe" required>
+
+    <label id="email-label">E-mail: </label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" value="abc@gmail.com"  required>
+
+    <label id="number-label">Age(optional): </label>
+    <input type="number" id="number" name="number" placeholder="Enter your age" value="12" min="1" max="100">
+
+    <label for="dropdown">Which option best describes your current role? </label>
+   <select id ="dropdown" name="dropdown">
+     <option value="s">Student</option>
+     <option value="ftj">Full Time Job</option>
+     <option value="ftl">Full Time Learner</option>
+     <option value="p">Prefer not to say</option>
+     <option value="o">Other</option>
+    </select>
+
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label><input type="radio" name="g" value="maybe" required> Maybe</label>
+                    <label><input type="radio" name="g" value="definitely" required> Definitely</label>
+                    <label><input type="radio" name="g" value="notsure" required> Not Sure</label>
+    
+
+    <label>What is your favorite feature of freeCodeCamp?</label>
+     <select id ="fav_feature" name="fav_feature">
+     <option value="c">Challenges</option>
+     <option value="pro">Projects</option>
+     <option value="com">Community</option>
+     <option value="open">Open Source</option>
+    </select>
+
+    <label>What would you like to see improved? (Check all that apply)</label>
+    <label><input type="checkbox" name="hobbies" value="reading"> Front-end Projects</label>
+    <label><input type="checkbox" name="hobbies" value="sports"> Back-end Projects</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Data Visualization</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Challenges</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Open-Source Community</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Gitter help rooms</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Videos</label>
+    <label><input type="checkbox" name="hobbies" value="music"> City Meetups</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Wiki</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Forum</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Additional Couses</label>
+
+  <label>Any comments or suggestions?</label>
+  <label><textarea rows="8"></textarea></label> 
+ <button id="submit" type="submit">Submit</button>
+  </form>
+ 
+  </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  margin:0px;
+  padding:0px;
+  font-family: Arial, sans-serif;     background-color: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.form-container{
+   background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label{
+display:block;
+}
+
+button{
+ background-color:#28a745;
+ color:white;
+}
+
+** end of undefined **
+
